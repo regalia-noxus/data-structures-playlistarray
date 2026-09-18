@@ -11,10 +11,7 @@ import java.util.Scanner;
 
 public class PlaylistArray {
 	
-	//Menjalankan program dan menampilkan menu sesuai peran pengguna
-	// Jika Admin bisa menambahkan lagu
-	// jika user bisa melihat list lagu
-
+	//Menjalankan program, menampilkan menu, Menambah lagu, Menampilkan data lagu, menghapus data lagu, mencari data lagu, dan mengurutkan data lagu
     public static void main(String[] args) {
 
     	Scanner input = new Scanner(System.in); // Membuat Scanner untuk membaca input dari keyboard agar bisa diketik dan interaktif
