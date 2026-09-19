@@ -71,22 +71,22 @@ public class PlaylistArray {
 
                 // MENU 3
                 case 3:
-                    System.out.println(
-                        "Fitur hapus lagu menunggu anggota 2."
-                    );
+                    System.out.print("Masukkan judul lagu yang ingin dihapus: ");
+                    String judulHapus = input.nextLine();
+                    playlist.hapusLagu(judulHapus);
                     break;
 
                 // MENU 4
                 case 4:
-                    System.out.println(
-                        "Fitur cari lagu menunggu anggota 2."
-                    );
+                    System.out.print("Masukkan judul lagu yang dicari: ");
+                    String judulCari = input.nextLine();
+                    playlist.cariLagu(judulCari);
                     break;
 
                 // MENU 5
                 case 5:
                     System.out.println(
-                        "Fitur pengurutan lagu menunggu anggota 2."
+                        "Fitur pengurutan lagu menunggu anggota 3."
                     );
                     break;
 
