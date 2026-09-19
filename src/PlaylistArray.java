@@ -71,16 +71,16 @@ public class PlaylistArray {
 
                 // MENU 3
                 case 3:
-                    System.out.print("Masukkan judul lagu yang ingin dihapus: ");
-                    String judulHapus = input.nextLine();
-                    playlist.hapusLagu(judulHapus);
+                    System.out.print("Masukkan judul lagu yang ingin dihapus: "); // menampilkan teks instruksi ke pengguna
+                    String judulHapus = input.nextLine(); // membaca input teks judul yang diketik pengguna
+                    playlist.hapusLagu(judulHapus);  // memanggil fungsi hapusLagu pada objek playlist dengan mengirimkan judul yang ingin dihapus
                     break;
 
                 // MENU 4
                 case 4:
                     System.out.print("Masukkan judul lagu yang dicari: ");
                     String judulCari = input.nextLine();
-                    playlist.cariLagu(judulCari);
+                    playlist.cariLagu(judulCari); // memanggil fungsi cariLagu pada objek playlist dengan mengirimkan judul yang dicari
                     break;
 
                 // MENU 5
