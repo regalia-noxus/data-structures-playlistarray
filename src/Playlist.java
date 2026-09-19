@@ -152,4 +152,38 @@ public class Playlist {
         System.out.println("\nDaftar lagu saat ini:");
         tampilkanSemuaLagu();
     }
+
+    // SORTING (BUBBLE SORT)
+    // Mengurutkan lagu berdasarkan durasi secara ascending
+    public void urutkanBerdasarkanDurasi() {
+
+        // Validasi jika playlist kosong
+        if (totalLagu == 0) {
+            System.out.println("Playlist masih kosong!");
+            return;
+        }
+
+        // Menampilkan data sebelum pengurutan
+        System.out.println("\nData Lagu sebelum pengurutan:");
+        tampilkanSemuaLagu();
+
+        // Bubble Sort
+        // Membandingkan durasi lagu yang bersebelahan
+        for (int i = 0; i < totalLagu - 1; i++) {       //perulangan pertama
+            for (int j = 0; j < totalLagu - 1 - i; j++) {       //perulangan kedua
+                // Jika durasi kiri lebih besar, maka ditukar
+                if (lagu[j].getDurasi() > lagu[j + 1].getDurasi()) {
+                    // Menyimpan sementara lagu[j]
+                    Lagu temp = lagu[j];
+                    // Tukar posisi lagu
+                    lagu[j] = lagu[j + 1];
+                    lagu[j + 1] = temp;
+                }
+            }
+        }
+
+        // Menampilkan data setelah pengurutan
+        System.out.println("\nData setelah pengurutan (durasi ascending):");
+        tampilkanSemuaLagu();
+    }
 }

@@ -85,9 +85,7 @@ public class PlaylistArray {
 
                 // MENU 5
                 case 5:
-                    System.out.println(
-                        "Fitur pengurutan lagu menunggu anggota 3."
-                    );
+                    playlist.urutkanBerdasarkanDurasi();
                     break;
 
                 // KELUAR
